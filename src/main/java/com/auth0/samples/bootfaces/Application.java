@@ -5,12 +5,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-import javax.faces.webapp.FacesServlet;
-import javax.servlet.DispatcherType;
+import jakarta.faces.webapp.FacesServlet;
+import jakarta.servlet.DispatcherType;
 import java.util.EnumSet;
 
 @EnableAutoConfiguration

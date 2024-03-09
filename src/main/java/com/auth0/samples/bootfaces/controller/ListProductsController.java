@@ -35,7 +35,7 @@ public class ListProductsController {
 	}
 
 	public String delete(Product product) {
-		productRepository.delete(product.getId());
+		productRepository.delete(product);
 		loadData();
 		return null;
 	}

@@ -7,12 +7,16 @@
 	<groupId>com.auth0.samples</groupId>
 	<artifactId>spring-boot-faces</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
 
 	<!-- Inherit defaults from Spring Boot -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.2.RELEASE</version>
+		<version>3.2.3</version>
 	</parent>
 
 	<!-- Add typical dependencies for a web application -->
@@ -35,17 +39,17 @@
 		<dependency>
 			<groupId>org.ocpsoft.rewrite</groupId>
 			<artifactId>rewrite-servlet</artifactId>
-			<version>3.4.1.Final</version>
+			<version>10.0.2.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ocpsoft.rewrite</groupId>
 			<artifactId>rewrite-integration-faces</artifactId>
-			<version>3.4.1.Final</version>
+			<version>10.0.2.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ocpsoft.rewrite</groupId>
 			<artifactId>rewrite-config-prettyfaces</artifactId>
-			<version>3.4.1.Final</version>
+			<version>10.0.2.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -54,17 +58,17 @@
 		<dependency>
 			<groupId>org.apache.myfaces.core</groupId>
 			<artifactId>myfaces-impl</artifactId>
-			<version>2.2.12</version>
+			<version>4.1.0-RC1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.myfaces.core</groupId>
 			<artifactId>myfaces-api</artifactId>
-			<version>2.2.12</version>
+			<version>4.1.0-RC1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
-			<version>6.1</version>
+			<version>14.0.0-RC1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.primefaces.extensions</groupId>
@@ -74,7 +78,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.16.16</version>
+			<version>1.18.30</version>
 		</dependency>
 
 
@@ -82,12 +86,18 @@
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
-			<version>2.3.4</version>
+			<version>2.6.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
-			<version>4.1.2</version>
+			<version>10.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-database-hsqldb</artifactId>
+			<version>10.9.1</version>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
